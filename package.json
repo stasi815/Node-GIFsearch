@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/stasi815/Node-GIFsearch/issues"
   },
-  "homepage": "https://github.com/stasi815/Node-GIFsearch#readme"
+  "homepage": "https://github.com/stasi815/Node-GIFsearch#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
