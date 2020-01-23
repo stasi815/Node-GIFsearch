@@ -1,9 +1,8 @@
 // Require Libraries
 const express = require('express');
-  // Require tenorjs near the top of the file
 
+// Require tenorjs near the top of the file
   const Tenor = require("tenorjs").client({
-// Replace with your own key
 "Key": "ZCVPPAQIZYXS", // https://tenor.com/developer/keyregistration
 "Filter": "high", // "off", "low", "medium", "high", not case sensitive
 "Locale": "en_US", // Your locale here, case-sensitivity depends on input
@@ -11,6 +10,9 @@ const express = require('express');
 
 // App Setup
 const app = express();
+
+//Static Files
+app.use(express.static('public'));
 
 // Middleware
 const exphbs  = require('express-handlebars');
